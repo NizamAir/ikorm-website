@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #131313;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.logo {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.logo > span {
+  font-size: 50px;
+  font-weight: 500;
+  /* color: #1c8bbb; */
+}
+
+.header__inner {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  margin-right: 70px;
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  font-weight: 500;
+}
+.menu__item + .menu__item {
+  padding-left: 10px;
+}
+.menu__link {
+  text-transform: uppercase;
+  padding: 42px 20px;
+  transition: all 0.3s;
+}
+.menu__link:hover {
+  background: #1c8bbb;
+  color: #ffffff;
+}
+
+.bike {
+  padding: 100px 0;
+}
+.bike__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.bike__column {
+  max-width: 50%;
+}
+
+.bike__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #1c8bbb;
+}
+
+.bike__text {
+  max-width: 420px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.bike__img {
+  max-height: 600px;
+}
+
+.advantages {
+  /* padding: 10px 0; */
+  padding: 50px 0 100px;
+}
+
+.advantages__head {
+  color: #1c8bbb;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 75px;
+}
+
+.advantages__items {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.advantages__item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.advantages__item > img {
+  width: 65px;
+  height: 65px;
+}
+
+.advantages__item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.advantages__item-text {
+  text-align: justify;
+}
+
+.characteristics {
+  padding: 50px 0;
+}
+.characteristics__head {
+  color: #1c8bbb;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.characteristics__inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.characteristics__items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.characteristics__item {
+  max-width: 600px;
+}
+
+.characteristics__item-title {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.characteristics__item-title > span {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.characteristics__images-end {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.characteristics__images-item {
+  max-width: 200px;
+}
+
+.info {
+  padding: 75px 0;
+}
+
+.info__head {
+  color: #1c8bbb;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.info__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.info__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.info__title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.info__subtitle {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.info__item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info__contacts-link {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.info__contacts-img {
+  margin-right: 10px;
+}
+
+.info__support {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.info__support > img {
+  max-width: 376px;
+}
+
+.info__support-text {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.footer {
+  background-color: #1c8bbb;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.footer__text {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  .bike__title {
+    font-size: 60px;
+  }
+  .characteristics__inner {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .info__inner {
+    gap: 20px;
+  }
+
+  .info__items {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .bike {
+    padding: 50px 0;
+  }
+  .bike__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .bike__column {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bike__text {
+    max-width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .header__inner {
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    display: none;
+  }
+
+  .bike__title {
+    text-align: center;
+  }
+
+  .info__head,
+  .characteristics__head,
+  .advantages__head {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .bike__title {
+    font-size: 50px;
+  }
+  .bike__text {
+    max-width: 100%;
+  }
+  .characteristics,
+  .info,
+  .advantages {
+    padding: 20px 0;
+  }
+  .characteristics__item-title {
+    font-size: 18px;
+  }
+
+  .characteristics__item-title > span {
+    font-size: 24px;
+  }
+  .characteristics__image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .bike__title {
+    font-size: 40px;
+  }
+  .info__head,
+  .characteristics__head,
+  .advantages__head {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .characteristics__item-title {
+    font-size: 14px;
+  }
+
+  .characteristics__item-title > span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .characteristics__images-end {
+    flex-direction: column;
+    align-items: center;
+  }
+  .characteristics__images-item {
+    max-width: 50%;
+    text-align: center;
+  }
+  .info__subtitle {
+    font-size: 40px;
+  }
+  .info__support > img {
+    max-width: 100%;
+  }
+}
