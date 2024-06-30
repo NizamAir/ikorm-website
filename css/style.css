@@ -383,6 +383,19 @@ body {
   .characteristics__item-title > span {
     font-size: 16px;
   }
+
+  .info__items {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .info__title {
+    font-size: 20px;
+  }
+
+  .info__subtitle {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -394,10 +407,15 @@ body {
     max-width: 50%;
     text-align: center;
   }
+
+  .info__inner {
+    gap: 40px;
+  }
+
   .info__subtitle {
-    font-size: 40px;
+    font-size: 30px;
   }
   .info__support > img {
-    max-width: 100%;
+    max-width: 75%;
   }
 }
